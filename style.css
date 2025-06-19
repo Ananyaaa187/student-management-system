@@ -1,0 +1,160 @@
+/* General font and background for all pages */
+body {
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  background-color: #f4f6fb;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* ===== HOME PAGE ===== */
+.home-container {
+  max-width: 500px;
+  margin: 100px auto;
+  text-align: center;
+}
+
+.home-container h2 {
+  font-size: 32px;
+  color: #2d3748;
+}
+
+.home-container a {
+  display: inline-block;
+  margin: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.home-container a:hover {
+  background-color: #0056b3;
+}
+
+/* ===== REGISTER PAGE ===== */
+.register-container {
+  max-width: 600px;
+  margin: 60px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.register-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.register-container form input,
+.register-container form select,
+.register-container form button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.register-container form button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.register-container form button:hover {
+  background-color: #218838;
+}
+
+/* ===== LOGIN PAGE ===== */
+.login-container {
+  max-width: 400px;
+  margin: 100px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.login-container form input,
+.login-container form button {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.login-container form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.login-container form button:hover {
+  background-color: #0056b3;
+}
+
+/* ===== DASHBOARD PAGE ===== */
+.dashboard-container {
+  max-width: 800px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-container h2 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+.dashboard-container p {
+  font-size: 16px;
+  margin: 6px 0;
+}
+
+.dashboard-container form {
+  margin-top: 20px;
+}
+
+.dashboard-container form input,
+.dashboard-container form button {
+  padding: 10px;
+  font-size: 15px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.dashboard-container form button {
+  background-color: #17a2b8;
+  color: white;
+  border: none;
+}
+
+.dashboard-container form button:hover {
+  background-color: #138496;
+}
+
+.dashboard-container ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}

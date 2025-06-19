@@ -1,0 +1,41 @@
+{
+    "22cs019": {
+        "name": "Ananya",
+        "email": "ananyas56639@gmail.com",
+        "roll": "22cs019",
+        "year": "3rd",
+        "password": "anu",
+        "attendance": {
+            "englsih": 98
+        },
+        "marks": {
+            "englsih": 100
+        }
+    },
+    "19": {
+        "name": "mayank",
+        "email": "mayank@gmail.com",
+        "roll": "19",
+        "year": "3rd",
+        "password": "mankuanu",
+        "attendance": {
+            "englsih": 90
+        },
+        "marks": {
+            "englsih": 88
+        }
+    },
+    "1819": {
+        "name": "manya",
+        "email": "manya@gmail.com",
+        "roll": "1819",
+        "year": "3rd",
+        "password": "manya",
+        "attendance": {
+            "maths": 88
+        },
+        "marks": {
+            "maths": 88
+        }
+    }
+}

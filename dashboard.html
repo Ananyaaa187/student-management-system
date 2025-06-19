@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="dashboard-container">
+    <h2>Welcome, {{ student.name }}</h2>
+    <p>Email: {{ student.email }}</p>
+    <p>USN/Roll No: {{ student.roll }}</p>
+    <p>Year: {{ student.year }}</p>
+    <a href="/logout">Logout</a>
+
+    <hr>
+    <h3>Attendance</h3>
+    <form method="POST" action="/update_attendance">
+      <input name="subject" placeholder="Subject" required>
+      <input type="number" name="count" placeholder="Count" required>
+      <input type="hidden" name="roll" value="{{ student.roll }}">
+      <button type="submit">Update Attendance</button>
+    </form>
+    <ul>
+      {% for subject, count in student.attendance.items() %}
+        <li>{{ subject }}: {{ count }}</li>
+      {% endfor %}
+    </ul>
+
+    <hr>
+    <h3>Marks</h3>
+    <form method="POST" action="/update_marks">
+      <input name="subject" placeholder="Subject" required>
+      <input type="number" name="mark" placeholder="Marks" required>
+      <input type="hidden" name="roll" value="{{ student.roll }}">
+      <button type="submit">Update Marks</button>
+    </form>
+    <ul>
+      {% for subject, mark in student.marks.items() %}
+        <li>{{ subject }}: {{ mark }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
